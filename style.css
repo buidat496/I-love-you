@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+}
+
+.love-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background: #f6c461;
+
+    overflow: hidden;
+}
+
+/* =========================
+   DÒNG I LOVE YOU PHÍA TRÊN
+========================= */
+
+.top-text {
+    position: absolute;
+
+    top: 14%;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: clamp(38px, 7vw, 78px);
+
+    font-weight: bold;
+    font-style: italic;
+
+    letter-spacing: 1px;
+}
+
+/* =========================
+   KHU VỰC ANIMATION
+========================= */
+
+.love-animation {
+    position: absolute;
+
+    left: 50%;
+    top: 58%;
+
+    width: 360px;
+    height: 180px;
+
+    transform: translate(-50%, -50%);
+}
+
+/* =========================
+   CHỮ I ❤️ U
+========================= */
+
+.love-content {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 5;
+}
+
+.letter {
+    font-size: 72px;
+
+    font-weight: bold;
+
+    color: #59318c;
+
+    display: inline-block;
+}
+
+.heart {
+    display: inline-block;
+
+    margin: 0 6px;
+
+    color: #ed1649;
+
+    font-size: 65px;
+
+    transform-origin: center;
+}
+
+/* =========================
+   2 THANH TRẮNG
+========================= */
+
+.line {
+    position: absolute;
+
+    top: 30px;
+
+    width: 7px;
+    height: 120px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    z-index: 10;
+}
+
+.line-left {
+    left: 75px;
+}
+
+.line-right {
+    right: 75px;
+}
+
+/* =========================
+   VÒNG TRÒN
+========================= */
+
+.circle {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 90px;
+    height: 90px;
+
+    border: 2px solid rgba(100, 65, 50, 0.25);
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .love-animation {
+        width: 320px;
+        height: 170px;
+    }
+
+    .line-left {
+        left: 60px;
+    }
+
+    .line-right {
+        right: 60px;
+    }
+
+    .letter {
+        font-size: 65px;
+    }
+
+    .heart {
+        font-size: 58px;
+    }
+
+    .line {
+        height: 115px;
+    }
+}
